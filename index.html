@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Card — Генератор</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;900&family=Golos+Text:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="bg-glow-teal"></div>
+    <div class="bg-glow-orange"></div>
+
+    <div class="panel">
+
+        <!-- LOGO / HEADER -->
+        <div class="header">
+            <div class="logo">
+                <div class="logo-mark">💳</div>
+                <div class="logo-name">City<span>Card</span></div>
+            </div>
+            <div class="subtitle">Генератор чеків</div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+
+            <button class="btn btn-trol" id="btnTrol">
+                <div class="btn-inner">
+                    <div class="btn-icon">🚎</div>
+                    <div class="btn-text">
+                        <span class="btn-title">Тролейбус</span>
+                        <span class="btn-desc">Згенерувати чек · зберегти фото</span>
+                    </div>
+                    <span class="btn-arrow">→</span>
+                </div>
+            </button>
+
+            <button class="btn btn-avt" id="btnAvt">
+                <div class="btn-inner">
+                    <div class="btn-icon">🚍</div>
+                    <div class="btn-text">
+                        <span class="btn-title">Автобус</span>
+                        <span class="btn-desc">Згенерувати чек · зберегти фото</span>
+                    </div>
+                    <span class="btn-arrow">→</span>
+                </div>
+            </button>
+
+        </div>
+
+        <!-- STATUS -->
+        <div class="status">
+            <div class="status-dot" id="dot"></div>
+            <span class="status-label" id="label">Оберіть тип транспорту</span>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
