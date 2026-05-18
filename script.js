@@ -85,13 +85,13 @@ function generate(type) {
         "done",
         `✓ ${type === "trol" ? "Тролейбус" : "Автобус"} · ${datetime}`,
       );
-    }, "image/png");
+    }, "image/jpg");
   };
 
   img.onerror = () => {
     setStatus(
       "error",
-      `⚠ Не вдалося знайти ./photo/${type === "trol" ? "tralik" : "bus"}.png`,
+      `⚠ Не вдалося знайти ./photo/${type === "trol" ? "tralik" : "bus"}.jpg`,
     );
   };
 
